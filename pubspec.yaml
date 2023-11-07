@@ -1,0 +1,17 @@
+name: dart_iterables_benchmarks
+description: Simple benchmarks to compare different approaches of working with data
+version: 1.0.0
+repository: https://github.com/ASGAlex/dart_iterables_benchmarks
+publish_to: none
+
+environment:
+  sdk: ^3.1.4
+
+# Add regular dependencies here.
+dependencies:
+  dart_bloom_filter: ^1.0.0
+
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
