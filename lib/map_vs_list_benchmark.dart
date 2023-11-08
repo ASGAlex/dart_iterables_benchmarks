@@ -74,7 +74,7 @@ int mapAccessHashSetByIndex(int objectsCount) {
   ///
   final objects = MyObject.createObjects(objectsCount, true);
 
-  final keyValueMap = <int, bool>{};
+  final keyValueMap = <int, bool>{}; // <--- Key is integer, not object!!!
   for (var i = 0; i < objects.length; i++) {
     final object = objects[i];
     if (int.parse(object.data) < 1000) {
@@ -92,7 +92,7 @@ int mapAccessHashSetByIndex(int objectsCount) {
     for (var j = 0; j < objects.length; j++) {
       if (i == j) continue;
       if (keyValueMap[i] == keyValueMap[j]) {
-        // print('match!');
+        // any useful logic here
       }
     }
   }
